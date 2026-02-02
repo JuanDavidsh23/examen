@@ -23,19 +23,25 @@
       "rol": "usuario",
       "fechaRegistro": "2026-02-02T12:41:11.983Z",
       "id": "n6gvo5giy"
+    },
+    {
+      "id": "wrizn3qw5",
+      "nombre": "santiago",
+      "email": "santi@gmail.com",
+      "password": "santi123",
+      "rol": "usuario",
+      "fechaRegistro": "2026-02-02T14:15:28.833Z"
+    },
+    {
+      "id": "j7cfsxr9k",
+      "nombre": "kevin",
+      "email": "kevin@gmail.com",
+      "password": "kevin1",
+      "rol": "usuario",
+      "fechaRegistro": "2026-02-02T14:35:59.400Z"
     }
   ],
   "tareas": [
-    {
-      "id": "t3",
-      "titulo": "Quarterly Review",
-      "descripcion": "Preparar reporte trimestral",
-      "fechaEntrega": "2026-02-05",
-      "prioridad": "baja",
-      "estado": "completada",
-      "usuarioId": "1q2kfzdye",
-      "fechaCreacion": "2026-01-28T09:00:00.000Z"
-    },
     {
       "id": "nqfh453vs",
       "titulo": "jugar play",
@@ -55,6 +61,26 @@
       "estado": "pendiente",
       "usuarioId": "n6gvo5giy",
       "fechaCreacion": "2026-02-02T12:53:23.561Z"
+    },
+    {
+      "id": "127ojma7p",
+      "titulo": "fsgsgs",
+      "descripcion": "gsgs",
+      "fechaEntrega": "2024-01-02",
+      "prioridad": "media",
+      "estado": "pendiente",
+      "usuarioId": "wrizn3qw5",
+      "fechaCreacion": "2026-02-02T14:22:35.787Z"
+    },
+    {
+      "id": "wl1uqkvak",
+      "titulo": "desarrollar app",
+      "descripcion": "hoy",
+      "fechaEntrega": "2027-01-02",
+      "prioridad": "alta",
+      "estado": "pendiente",
+      "usuarioId": "j7cfsxr9k",
+      "fechaCreacion": "2026-02-02T14:36:55.459Z"
     }
   ]
 }
