@@ -1,0 +1,70 @@
+body{
+background-color: antiquewhite;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #020024;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.sectionLogin{
+  background-color: whitesmoke;
+  border-radius: 8px;
+}
+
+.articleLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+}
+.registerForm{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.articleHigh{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.articleMidName{
+  display: flex;
+  flex-direction: column;
+}
+
+.articleMid2EMail{
+  display: flex;
+  flex-direction: column;
+}
+.articleMid3Password{
+  display: flex;
+  flex-direction: column;
+}
+
+.articleLow{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articleHigh_h1{
+  margin: 0px;
+}
+
+.articleHigh_p{
+  margin: 0px;
+}
+
+.input{
+  padding: 8px;
+  border-radius:8px ;
+  border: 1px solid black;
+}

@@ -1,0 +1,60 @@
+{
+  "usuarios": [
+    {
+      "id": "1q2kfzdye",
+      "nombre": "Juan david santamaria",
+      "email": "santamariajuan34@gmail.com",
+      "password": "123456",
+      "rol": "usuario",
+      "fechaRegistro": "2026-02-02T12:02:39.935Z"
+    },
+    {
+      "id": "admin001",
+      "nombre": "Administrador",
+      "email": "admin@crudtask.com",
+      "password": "admin123",
+      "rol": "admin",
+      "fechaRegistro": "2026-02-02T00:00:00.000Z"
+    },
+    {
+      "nombre": "daniel",
+      "email": "daniel@gmail.com",
+      "password": "daniel",
+      "rol": "usuario",
+      "fechaRegistro": "2026-02-02T12:41:11.983Z",
+      "id": "n6gvo5giy"
+    }
+  ],
+  "tareas": [
+    {
+      "id": "t3",
+      "titulo": "Quarterly Review",
+      "descripcion": "Preparar reporte trimestral",
+      "fechaEntrega": "2026-02-05",
+      "prioridad": "baja",
+      "estado": "completada",
+      "usuarioId": "1q2kfzdye",
+      "fechaCreacion": "2026-01-28T09:00:00.000Z"
+    },
+    {
+      "id": "nqfh453vs",
+      "titulo": "jugar play",
+      "descripcion": "jugar",
+      "fechaEntrega": "2026-05-02",
+      "prioridad": "media",
+      "estado": "pendiente",
+      "usuarioId": "1q2kfzdye",
+      "fechaCreacion": "2026-02-02T12:51:06.472Z"
+    },
+    {
+      "id": "845xq8fks",
+      "titulo": "fgsgsg",
+      "descripcion": "gsgsgs",
+      "fechaEntrega": "2026-02-02",
+      "prioridad": "media",
+      "estado": "pendiente",
+      "usuarioId": "n6gvo5giy",
+      "fechaCreacion": "2026-02-02T12:53:23.561Z"
+    }
+  ]
+}
