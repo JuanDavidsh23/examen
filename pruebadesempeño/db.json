@@ -57,8 +57,8 @@
       "titulo": "fgsgsg",
       "descripcion": "gsgsgs",
       "fechaEntrega": "2026-02-02",
-      "prioridad": "media",
-      "estado": "pendiente",
+      "prioridad": "baja",
+      "estado": "completada",
       "usuarioId": "n6gvo5giy",
       "fechaCreacion": "2026-02-02T12:53:23.561Z"
     },
@@ -91,6 +91,16 @@
       "estado": "pendiente",
       "usuarioId": "j7cfsxr9k",
       "fechaCreacion": "2026-02-02T15:35:19.416Z"
+    },
+    {
+      "id": "9yrzr21i4",
+      "titulo": "hdjhdjdjd",
+      "descripcion": "jdjd",
+      "fechaEntrega": "2026-02-02",
+      "prioridad": "media",
+      "estado": "completada",
+      "usuarioId": "n6gvo5giy",
+      "fechaCreacion": "2026-02-02T16:33:10.132Z"
     }
   ]
 }

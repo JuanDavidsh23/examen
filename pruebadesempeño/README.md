@@ -1,172 +1,150 @@
-# CRUDTASK - Sistema de Gestión de Tareas Académicas
+# CRUDTASK 
 
-## Descripción
-CRUDTASK es una aplicación web dedicada a la gestión de tareas académicas que permite a usuarios registrarse, iniciar sesión, gestionar sus tareas y su perfil, además de proporcionar un panel de administración para supervisar la actividad del sistema.
+## Description
+CRUDTASK is a web application dedicated to the management of academic tasks that allows users to register, log in, manage their tasks and profile, as well as providing an administration panel to monitor system activity.
 
-## Características
 
-### Para Usuarios
-- ✅ **Registro e Inicio de Sesión** - Crear cuenta y acceder al sistema
-- ✅ **Dashboard** - Ver todas las tareas en una interfaz intuitiva
-- ✅ **CRUD de Tareas** - Crear, leer, actualizar y eliminar tareas
-- ✅ **Gestión de Perfil** - Editar datos personales y contraseña
-- ✅ **Filtrado de Tareas** - Ver tareas por estado (todas, pendientes, completadas)
-- ✅ **Estadísticas** - Ver resumen de tareas completadas y pendientes
 
-### Para Administradores
-- ✅ **Panel de Control** - Dashboard con estadísticas del sistema
-- ✅ **Gestión de Usuarios** - Ver, buscar y eliminar usuarios
-- ✅ **Supervisión de Tareas** - Ver todas las tareas del sistema
-- ✅ **Actividad del Sistema** - Monitorear la actividad de usuarios
-- ✅ **Estadísticas Globales** - Tasa de completitud, total de tareas, etc.
+### For Users
+**Registration and Login** - Create an account and access the system
+**Dashboard** - View all tasks in an intuitive interface
+**Task CRUD** - Create, read, update, and delete tasks
+**Profile Management** - Edit personal data and password
+**Task Filtering** - View tasks by status (all, pending, completed)
+**Statistics** - View a summary of completed and pending tasks
 
-## Estructura del Proyecto
+### For Administrators
+-**Control Panel** - Dashboard with system statistics
+**User Management** - View, search, and delete users
+**Task Monitoring** - View all system tasks
+**System Activity** - Monitor user activity
+**Global Statistics** - Rate of completeness, total tasks, etc.
 
-```
-pruebadesempeño/
-├── index.html                 # Login
-├── db.json                    # Base de datos JSON
-├── package.json
-├── public/
-│   └── views/
-│       └── register.html      # Registro de usuarios
-└── src/
-    ├── style.css              # Estilos generales
-    ├── login.js               # Lógica de login
-    ├── register.js            # Lógica de registro
-    ├── dashboard.html         # Dashboard de usuario
-    ├── dashboard.js           # Lógica del dashboard
-    ├── profile.html           # Perfil del usuario
-    ├── profile.js             # Lógica del perfil
-    ├── admin-dashboard.html   # Panel del administrador
-    ├── admin-dashboard.js     # Lógica del admin
-    └── styles/
-        ├── dashboard.css
-        ├── profile.css
-        └── admin-dashboard.css
-```
 
-## Instalación y Configuración
 
-### 1. Requisitos previos
-- Node.js instalado
-- npm (gestor de paquetes)
+## Installation and Configuration
 
-### 2. Instalación de dependencias
+### 1. Prerequisites
+- Node.js installed
+- npm (package manager)
+
+### 2. Installing Dependencies
 ```bash
 cd pruebadesempeño
 npm install
 ```
 
-### 3. Iniciar json-server (API)
-En una terminal:
+### 3. Starting the json-server (API)
+In a terminal:
 ```bash
 npx json-server --watch db.json
 ```
-Esto iniciará el servidor en `http://localhost:3000`
+This will start the server at `http://localhost:3000`
 
-### 4. Iniciar Vite (Servidor de desarrollo)
-En otra terminal:
+### 4. Starting Vite (Development Server)
+In another terminal:
 ```bash
 npm run dev
 ```
 
-### 5. Acceder a la aplicación
-- Abre tu navegador en `http://localhost:5173` (o la URL que Vite indique)
+### 5. Accessing the Application
+- Open your browser to `http://localhost:5173` (or the URL provided by Vite)
 
-## Credenciales de Prueba
+## Test Credentials
 
-### Usuario Regular
+### Regular User
 - Email: `santamariajuan34@gmail.com`
-- Contraseña: `123456`
+- Password: `123456`
 
-### Administrador
+### Administrator
 - Email: `admin@crudtask.com`
-- Contraseña: `admin123`
+- Password: `admin123`
 
-## Flujo de Uso
+## Usage Flow
 
-### Como Usuario Regular
-1. **Registro**: Crea una nueva cuenta en `/public/views/register.html`
-2. **Login**: Inicia sesión con tus credenciales en la página principal
-3. **Dashboard**: Visualiza todas tus tareas
-4. **Crear Tarea**: Haz clic en "+ Nueva Tarea" para crear una
-5. **Editar/Eliminar**: Gestiona tus tareas con los botones de acción
-6. **Perfil**: Actualiza tu información personal en "Mi Perfil"
+### As a Regular User
+1. **Register**: Create a new account at `/public/views/register.html`
+2. **Login**: Log in with your credentials on the homepage
+3. **Dashboard**: View all your tasks
+4. **Create Task**: Click "+ New Task" to create a task
+5. **Edit/Delete**: Manage your tasks using the action buttons
+6. **Profile**: Update your personal information in "My Profile"
 
-### Como Administrador
-1. **Login**: Usa las credenciales de admin
-2. **Panel Admin**: Accede automáticamente al panel de administración
-3. **Usuarios**: Ver y gestionar todos los usuarios del sistema
-4. **Tareas**: Supervisar todas las tareas de todos los usuarios
-5. **Estadísticas**: Monitorear la actividad del sistema
+### As an Administrator
+1. **Login**: Use admin credentials
+2. **Admin Panel**: Automatically access the admin panel
+3. **Users**: View and manage all system users
+4. **Tasks**: Monitor all tasks for all users
+5. **Statistics**: Monitor system activity
 
-## Estructura de Datos
+## Data Structure
 
-### Usuarios
+### Users
 ```json
 {
-  "id": "abc123",
-  "nombre": "Juan Pérez",
-  "email": "juan@example.com",
-  "password": "123456",
-  "rol": "usuario|admin",
-  "fechaRegistro": "2026-02-02T12:00:00Z"
+"id": "abc123",
+"name": "Juan Pérez",
+"email": "juan@example.com",
+"password": "123456",
+"role": "user|admin",
+"registrationdate": "2026-02-02T12:00:00Z"
 }
 ```
 
-### Tareas
+### Tasks
 ```json
 {
-  "id": "task123",
-  "titulo": "Tarea ejemplo",
-  "descripcion": "Descripción de la tarea",
-  "fechaEntrega": "2026-02-15",
-  "prioridad": "alta|media|baja",
-  "estado": "pendiente|completada",
-  "usuarioId": "abc123",
-  "fechaCreacion": "2026-02-02T12:00:00Z"
+"id": "task123",
+"title": "Example Task",
+"description": "Task Description",
+"dueDate": "2026-02-15",
+"priority": "high|medium|low",
+"status": "pending|completed",
+
+"userId": "abc123",
+
+"creationDate": "2026-02-02T12:00:00Z"
 }
 ```
 
-## Funcionalidades Técnicas
+## Technical Features
 
-- **Autenticación Local**: Uso de localStorage para mantener sesión
-- **Validación**: Validación de emails, contraseñas y campos requeridos
-- **API RESTful**: Consumo de json-server
-- **Protección de Rutas**: Redirección según autenticación y rol
-- **Interfaz Responsiva**: Diseño adaptable a diferentes tamaños
-- **Filtrado y Búsqueda**: Funcionalidades de filtrado en tiempo real
+- **Local Authentication**: Use of localStorage to maintain session
+- **Validation**: Validation of emails, passwords, and required fields
+- **RESTful API**: Consumption of json-server
+- **Route Protection**: Redirection based on authentication and role
+- **Responsive Interface**: Adaptable design for different screen sizes
+- **Filtering and Search**: Real-time filtering functionalities
 
-## Notas de Seguridad
+## Security Notes
 
-⚠️ **IMPORTANTE**: Esta es una aplicación de demostración. En producción:
-- Nunca almacenes contraseñas en texto plano
-- Implementa autenticación segura (JWT, OAuth)
-- Usa bases de datos reales (MongoDB, PostgreSQL, etc.)
-- Implementa validación en servidor
-- Usa HTTPS
-- Implement CORS correctamente
+⚠️ **IMPORTANT**: This is a demo application. In production:
+- Never store passwords in plain text
+- Implement secure authentication (JWT, OAuth)
+- Use real databases (MongoDB, PostgreSQL, etc.)
+- Implement server-side validation
+- Use HTTPS
+- Implement CORS correctly
 
-## Desarrollo Futuro
+## Future Development
 
-- [ ] Autenticación con JWT
-- [ ] Hashing de contraseñas (bcrypt)
-- [ ] Notificaciones de vencimiento de tareas
-- [ ] Sistema de calificaciones
-- [ ] Exportación de reportes
-- [ ] Temas oscuros
-- [ ] Notificaciones en tiempo real (WebSockets)
-- [ ] Integración con calendario
+- [ ] Authentication with JWT
+- [ ] Password hashing (bcrypt)
+- [ ] Task due date notifications
+- [ ] Grading system
+- [ ] Report export
+- [ ] Dark themes
+- [ ] Real-time notifications (WebSockets)
+- [ ] Calendar integration
 
-## Soporte
+## Support
 
-Para problemas o preguntas, asegúrate de:
-1. Verificar que json-server esté corriendo
-2. Verificar que Vite esté corriendo
-3. Revisar la consola del navegador (F12)
-4. Verificar la consola del terminal para errores
+For problems or questions, make sure to:
+1. Verify that json-server is running
+2. Verify that Vite is running
+3. Check the browser console (F12)
+4. Check the terminal console for errors
 
-## Licencia
+## License
 
-Este proyecto es de código abierto.
+This project is open source.
