@@ -166,6 +166,10 @@
   color: #3b6156;
 }
 
+.adminName{
+    color: black;
+}
+
 .filters-bar .filter-btn.active {
  background: -webkit-linear-gradient(90deg, #3b6156,#0d4338,#3b6156);background: linear-gradient(90deg, #3b6156,#0d4338,#3b6156);
   color: white;

@@ -10,7 +10,7 @@
     },
     {
       "id": "admin001",
-      "nombre": "Administrador",
+      "nombre": "Administrador CRUDTASK",
       "email": "admin@crudtask.com",
       "password": "admin123",
       "rol": "admin",
@@ -33,12 +33,12 @@
       "fechaRegistro": "2026-02-02T14:15:28.833Z"
     },
     {
-      "id": "j7cfsxr9k",
-      "nombre": "kevin",
-      "email": "kevin@gmail.com",
-      "password": "kevin1",
+      "nombre": "kevin antonio",
+      "email": "kevin323@gmail.com",
+      "password": "kevin324242",
       "rol": "usuario",
-      "fechaRegistro": "2026-02-02T14:35:59.400Z"
+      "fechaRegistro": "2026-02-02T14:35:59.400Z",
+      "id": "j7cfsxr9k"
     }
   ],
   "tareas": [
@@ -78,9 +78,19 @@
       "descripcion": "hoy",
       "fechaEntrega": "2027-01-02",
       "prioridad": "alta",
-      "estado": "pendiente",
+      "estado": "completada",
       "usuarioId": "j7cfsxr9k",
       "fechaCreacion": "2026-02-02T14:36:55.459Z"
+    },
+    {
+      "id": "b8dayvzmo",
+      "titulo": "jugar ben 10",
+      "descripcion": "fsgsgs",
+      "fechaEntrega": "2023-02-02",
+      "prioridad": "media",
+      "estado": "pendiente",
+      "usuarioId": "j7cfsxr9k",
+      "fechaCreacion": "2026-02-02T15:35:19.416Z"
     }
   ]
 }

@@ -103,6 +103,8 @@ function renderizarTareas() {
     const prioClass = tarea.prioridad === 'alta' ? 'prio-alta' : tarea.prioridad === 'media' ? 'prio-media' : 'prio-baja';
     const assigneeName = usuarioActual.nombre || 'You';
     const initials = assigneeName.split(' ').map(n=>n[0]).join('').substr(0,2).toUpperCase();
+    const toggleIcon = tarea.estado === 'completada' ? '↩️' : '✅';
+    const toggleTitle = tarea.estado === 'completada' ? 'Marcar como pendiente' : 'Marcar como completada';
 
     return `
       <tr>
@@ -112,6 +114,7 @@ function renderizarTareas() {
         <td><span class="priority"><span class="priority-dot ${prioClass}"></span>${tarea.prioridad}</span></td>
         <td>${formatearFecha(tarea.fechaEntrega)}</td>
         <td>
+          <button class="action-btn" onclick="toggleTarea('${tarea.id}')" title="${toggleTitle}">${toggleIcon}</button>
           <button class="action-btn" onclick="abrirModalEditar('${tarea.id}')">✏️</button>
           <button class="action-btn" onclick="eliminarTarea('${tarea.id}')">🗑️</button>
         </td>
